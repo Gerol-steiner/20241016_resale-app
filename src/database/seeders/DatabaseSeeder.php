@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB; // DBファサードをインポート
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +14,21 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // 外部キー制約を解除
+        Schema::disableForeignKeyConstraints();
+
+        // シーディング前に全レコードを削除
+        DB::table('conditions')->truncate();
+        DB::table('categories')->truncate();
+        DB::table('users')->truncate();
+
+        // 外部キー制約を有効化
+        Schema::enableForeignKeyConstraints();
+
+        // ダミーデータ作成
+        $this->call(UsersTableSeeder::class);
+        $this->call(CategoriesTableSeeder::class);
+        $this->call(ConditionsTableSeeder::class);
+        $this->call(ItemsTableSeeder::class);
     }
 }
