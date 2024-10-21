@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB; // DBファサードをインポート
+use Illuminate\Support\Facades\Schema;  // 追記
 
 class DatabaseSeeder extends Seeder
 {
