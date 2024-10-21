@@ -1,0 +1,43 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+
+# Composerのキャッシュ
+/composer.lock
+
+# Laravelのセッションファイル
+/storage/framework/sessions/*
+
+# Laravelのキャッシュファイル
+/storage/framework/views/*
+
+# Laravelのログファイル
+/storage/logs/*.log
+
+# PHPUnitのカバレッジレポート
+coverage/
+
+# IDE関連の設定ファイル
+/.idea/
+/*.sublime-project
+/*.sublime-workspace
+
+# その他の環境設定ファイル
+.env.local
+.env.testing
+.env.production
+
+# Docker関連のファイル
+docker-compose.local.yml
