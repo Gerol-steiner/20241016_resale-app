@@ -17,20 +17,13 @@ class CreateNewUser implements CreatesNewUsers
      *
      * @param  array<string, string>  $input
      */
+
     public function create(array $input): User
     {
-        Validator::make($input, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => [
-                'required',
-                'string',
-                'email',
-                'max:255',
-                Rule::unique(User::class),
-            ],
-            'password' => $this->passwordRules(),
-        ])->validate();
+        // ここでのFortifyデフォルトのバリデーションは削除
+        // バリデーションはRegisterControllerでのフォームリクエストにて実施
 
+        // ユーザーを作成（コントローラからリダイレクト）
         return User::create([
             'name' => $input['name'],
             'email' => $input['email'],

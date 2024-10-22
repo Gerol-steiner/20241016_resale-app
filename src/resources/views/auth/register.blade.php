@@ -18,8 +18,8 @@
     </header>
 
     <main>
-        <div class="contact-form__content">
-            <div class="contact-form__heading">
+        <div class="register-form__content">
+            <div class="register-form__heading">
                 <h2>会員登録</h2>
             </div>
             <form class="form" action="/register" method="post">
@@ -79,9 +79,9 @@
                         </div>
                         <div class="form__group-content">
                             <div class="form__input--text">
-                                <input type="password" name="password" value="{{ old('password') }}"/>
+                                <input type="password" name="password_confirmation" value="{{ old('password_confirmation') }}"/>
                                 @if ($errors->has('password'))
-                                    @foreach ($errors->get('password') as $error)
+                                    @foreach ($errors->get('password_confirmation') as $error)
                                         <div class="error-message">{{ $error }}</div>
                                     @endforeach
                                 @endif
