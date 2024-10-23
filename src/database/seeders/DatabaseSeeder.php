@@ -21,6 +21,8 @@ class DatabaseSeeder extends Seeder
         // シーディング前に全レコードを削除
         DB::table('conditions')->truncate();
         DB::table('categories')->truncate();
+        DB::table('items')->truncate();
+        DB::table('item_category')->truncate();
         DB::table('users')->truncate();
 
         // 外部キー制約を有効化

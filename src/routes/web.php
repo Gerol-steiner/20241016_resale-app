@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController; // ログアウト処理用
+use App\Http\Controllers\ItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,5 @@ Route::post('/logout', [LoginController::class, 'logout'])
 
 // 開発用のlogoutなので、不要になったら消す
 Route::get('/logout', [LoginController::class, 'logout_temp'])->name('logout_temp');
+
+Route::get('/', [ItemController::class, 'index'])->name('item.index');

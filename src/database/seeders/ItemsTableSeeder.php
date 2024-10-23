@@ -20,7 +20,7 @@ class ItemsTableSeeder extends Seeder
 
         $items = [
             [
-                'image_url' => 'uploads/items/Armani+Mens+Clock.jpg',
+                'image_url' => 'storage/uploads/items/Armani+Mens+Clock.jpg',
                 'user_id' => $userIds->random(),
                 'category_id' => [$categoryIds['ファッション'], $categoryIds['メンズ'], $categoryIds['アクセサリー']],
                 'condition_id' => $conditionIds['良好'],
@@ -30,7 +30,7 @@ class ItemsTableSeeder extends Seeder
                 'brand' => 'ブランドA'
             ],
             [
-                'image_url' => 'uploads/items/HDD+Hard+Disk.jpg',
+                'image_url' => 'storage/uploads/items/HDD+Hard+Disk.jpg',
                 'user_id' => $userIds->random(),
                 'category_id' => [$categoryIds['家電']],
                 'condition_id' => $conditionIds['目立った傷や汚れなし'],
@@ -40,7 +40,7 @@ class ItemsTableSeeder extends Seeder
                 'brand' => 'ブランドB'
             ],
             [
-                'image_url' => 'uploads/items/iLovelMG+d.jpg',
+                'image_url' => 'storage/uploads/items/iLoveIMG+d.jpg',
                 'user_id' => $userIds->random(),
                 'category_id' => [$categoryIds['キッチン']],
                 'condition_id' => $conditionIds['やや傷や汚れあり'],
@@ -50,7 +50,7 @@ class ItemsTableSeeder extends Seeder
                 'brand' => null
             ],
             [
-                'image_url' => 'uploads/items/Leather+Shoes+Product+Photo.jpg',
+                'image_url' => 'storage/uploads/items/Leather+Shoes+Product+Photo.jpg',
                 'user_id' => $userIds->random(),
                 'category_id' => [$categoryIds['ファッション'], $categoryIds['メンズ']],
                 'condition_id' => $conditionIds['状態が悪い'],
@@ -60,7 +60,7 @@ class ItemsTableSeeder extends Seeder
                 'brand' => 'ブランドC'
             ],
             [
-                'image_url' => 'uploads/items/Living+Room+Laptop.jpg',
+                'image_url' => 'storage/uploads/items/Living+Room+Laptop.jpg',
                 'user_id' => $userIds->random(),
                 'category_id' => [$categoryIds['家電']],
                 'condition_id' => $conditionIds['良好'],
@@ -70,7 +70,7 @@ class ItemsTableSeeder extends Seeder
                 'brand' => 'ブランドD'
             ],
             [
-                'image_url' => 'uploads/items/Music+Mic+4632231.jpg',
+                'image_url' => 'storage/uploads/items/Music+Mic+4632231.jpg',
                 'user_id' => $userIds->random(),
                 'category_id' => [$categoryIds['家電']],
                 'condition_id' => $conditionIds['目立った傷や汚れなし'],
@@ -80,7 +80,7 @@ class ItemsTableSeeder extends Seeder
                 'brand' => null
             ],
             [
-                'image_url' => 'uploads/items/Purse+fashion+pocket.jpg',
+                'image_url' => 'storage/uploads/items/Purse+fashion+pocket.jpg',
                 'user_id' => $userIds->random(),
                 'category_id' => [$categoryIds['ファッション'], $categoryIds['レディース']],
                 'condition_id' => $conditionIds['やや傷や汚れあり'],
@@ -90,7 +90,7 @@ class ItemsTableSeeder extends Seeder
                 'brand' => 'ブランドE'
             ],
             [
-                'image_url' => 'uploads/items/Tumbler+souvenir.jpg',
+                'image_url' => 'storage/uploads/items/Tumbler+souvenir.jpg',
                 'user_id' => $userIds->random(),
                 'category_id' => [$categoryIds['キッチン']],
                 'condition_id' => $conditionIds['状態が悪い'],
@@ -100,7 +100,7 @@ class ItemsTableSeeder extends Seeder
                 'brand' => 'ブランドF'
             ],
             [
-                'image_url' => 'uploads/items/Waitress+with +Coffee+Grinder.jpg',
+                'image_url' => 'storage/uploads/items/Waitress+with+Coffee+Grinder.jpg',
                 'user_id' => $userIds->random(),
                 'category_id' => [$categoryIds['インテリア'], $categoryIds['キッチン']],
                 'condition_id' => $conditionIds['良好'],
@@ -110,7 +110,7 @@ class ItemsTableSeeder extends Seeder
                 'brand' => 'ブランドG'
             ],
             [
-                'image_url' => 'uploads/items/外出メイクアップセット.jpg',
+                'image_url' => 'storage/uploads/items/外出メイクアップセット.jpg',
                 'user_id' => $userIds->random(),
                 'category_id' => [$categoryIds['レディース']],
                 'condition_id' => $conditionIds['目立った傷や汚れなし'],
