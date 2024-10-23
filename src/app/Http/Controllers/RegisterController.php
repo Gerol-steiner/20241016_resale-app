@@ -10,7 +10,7 @@ class RegisterController extends Controller
 {
     public function register(RegisterRequest $request)
     {
-        // バリデーションが通った後、CreateNewUserを呼び出す
+        // バリデーションが通った後、CreateNewUserを呼び出す(-> CreateNewUser.php)
         $user = (new CreateNewUser())->create($request->validated());
 
         // ユーザー登録後の処理（ログイン、リダイレクトなど）

@@ -22,25 +22,10 @@
             <div class="form__title">
                 <h2>ログイン</h2>
             </div>
+
             <form class="form" action="/login" method="post">
                 @csrf
                 <div class="form__inner">
-                    <div class="form__group">
-                        <div class="form__group-title">
-                            <span class="form__label--item">ユーザー名</span>
-                        </div>
-                        <div class="form__group-content">
-                            <div class="form__input--text">
-                                <input type="text" name="name" value="{{ old('name') }}" />
-                                @if ($errors->has('name'))
-                                    @foreach ($errors->get('name') as $error)
-                                        <div class="error-message">{{ $error }}</div>
-                                    @endforeach
-                                @endif
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="form__group">
                         <div class="form__group-title">
                             <span class="form__label--item">メールアドレス</span>
@@ -50,6 +35,22 @@
                                 <input type="email" name="email" value="{{ old('email') }}" />
                                 @if ($errors->has('email'))
                                     @foreach ($errors->get('email') as $error)
+                                        <div class="error-message">{{ $error }}</div>
+                                    @endforeach
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__group-title">
+                            <span class="form__label--item">パスワード</span>
+                        </div>
+                        <div class="form__group-content">
+                            <div class="form__input--text">
+                                <input type="password" name="password" value="{{ old('password') }}"/>
+                                @if ($errors->has('password'))
+                                    @foreach ($errors->get('password') as $error)
                                         <div class="error-message">{{ $error }}</div>
                                     @endforeach
                                 @endif
