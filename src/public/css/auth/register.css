@@ -11,7 +11,7 @@ body {
     padding: 15px;
 }
 
-.register-form__heading {
+.form__title {
     margin: 40px;
     text-align: center;
 }
@@ -83,7 +83,7 @@ body {
 }
 
 .form__link a {
-        font-size: 12px;
+    font-size: 13px;
     color: #007bff;
     text-decoration: none;  /* 下線を消す */
 }
@@ -99,7 +99,7 @@ body {
         height: auto;
     }
 
-    .register-form__heading {
+    .form__title {
         /* margin: 30px;  マージンを減らす */
     }
 
